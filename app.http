@@ -1,0 +1,68 @@
+
+POST http://localhost:3000/signup/
+Content-Type: application/json
+
+{
+  "userName": "PagadalaVijay",
+  "password": "vijay123564646545"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+
+{
+  "username": "PagadalaVijay",
+  "password": "vijay123564646545"
+}
+
+###
+GET http://localhost:3000/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+###
+GET http://localhost:3000/states/7/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+
+###
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3000/districts/7/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+###
+DELETE  http://localhost:3000/districts/3/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+###
+PUT   http://localhost:3000/districts/5/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET   http://localhost:3000/states/7/stats/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhZ2FkYWxhVmlqYXkiLCJpYXQiOjE2OTc1MzM0NTZ9.pjtobU_DMcSBIM5owckOAgWoJXar0-liV43VzjrfOBg
+
